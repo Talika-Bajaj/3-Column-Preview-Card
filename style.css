@@ -12,9 +12,9 @@
     --Bright_orange: hsl(31, 77%, 52%);
     --Dark_cyan: hsl(184, 100%, 22%);
     --Very_dark_cyan: hsl(179, 100%, 13%);
-    
+
     /* Neutral */
-    
+
     --Transparent_white_para: hsla(0, 0%, 100%, 0.75);
     --Very_light_gray_buttons: hsl(0, 0%, 95%);
 }
@@ -46,7 +46,7 @@ body {
     background-color: var(--Bright_orange);
     border-top-left-radius: 12px;
     border-bottom-left-radius: 12px;
-    
+
 }
 
 .suv {
@@ -58,6 +58,7 @@ body {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
 }
+
 .show {
     margin-bottom: 60px;
 }
@@ -87,49 +88,11 @@ body {
 .sedan button {
     color: var(--Bright_orange);
 }
+
 .suv button {
     color: var(--Dark_cyan);
 }
+
 .luxury button {
     color: var(--Very_dark_cyan);
-}
-
-@media screen and (max-width: 970px) {
-    .card {
-        width: 90vw;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .card {
-        width: 500px;
-    }
-
-    .info {
-        grid-template-columns: auto;
-        margin: 50px auto;
-    }
-
-    .sedan {
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 12px;
-        
-    }
-
-    .luxury {
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 12px;
-        border-bottom-right-radius: 12px;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .card {
-        width: 80vw;
-    }
-
-    .car {
-        padding: 40px;
-    }
 }

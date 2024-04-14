@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+:root {
+    /* Primary  */
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    
+    /* Neutral */
+    
+    --Transparent_white_para: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray_buttons: hsl(0, 0%, 95%);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 934px;
+    border-radius: 12px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.car {
+    padding: 50px;
+    display: grid;
+    gap: 30px;
+}
+
+.sedan {
+    background-color: var(--Bright_orange);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    
+}
+
+.suv {
+    background-color: var(--Dark_cyan);
+}
+
+.luxury {
+    background-color: var(--Very_dark_cyan);
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.show {
+    margin-bottom: 60px;
+}
+
+.show h1 {
+    margin-bottom: 22px;
+    font-family: "Big Shoulders Display", sans-serif !important;
+    color: var(--Very_light_gray_buttons);
+}
+
+.show p {
+    color: var(--Transparent_white_para);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.car button {
+    background-color: var(--Very_light_gray_buttons);
+    border: none;
+    padding: 18px;
+    width: 70%;
+    border-radius: 35px;
+    font-weight: 400;
+}
+
+.sedan button {
+    color: var(--Bright_orange);
+}
+.suv button {
+    color: var(--Dark_cyan);
+}
+.luxury button {
+    color: var(--Very_dark_cyan);
+}
+
+@media screen and (max-width: 970px) {
+    .card {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 500px;
+    }
+
+    .info {
+        grid-template-columns: auto;
+        margin: 50px auto;
+    }
+
+    .sedan {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+        
+    }
+
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        width: 80vw;
+    }
+
+    .car {
+        padding: 40px;
+    }
+}

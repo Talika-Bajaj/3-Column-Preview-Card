@@ -1,0 +1,39 @@
+@media screen and (max-width: 970px) {
+    .card {
+        width: 90vw;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card {
+        width: 500px;
+    }
+
+    .info {
+        grid-template-columns: auto;
+        margin: 50px auto;
+    }
+
+    .sedan {
+        border-top-left-radius: 12px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 12px;
+
+    }
+
+    .luxury {
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 12px;
+        border-bottom-right-radius: 12px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        width: 80vw;
+    }
+
+    .car {
+        padding: 40px;
+    }
+}

@@ -1,39 +1,38 @@
-@media screen and (max-width: 970px) {
+@media screen and (width> 400px) {
     .card {
-        width: 90vw;
+        width: 315px;
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (width > 800px) {
+
     .card {
-        width: 500px;
+        width: 95vw;
     }
 
     .info {
-        grid-template-columns: auto;
-        margin: 50px auto;
+        grid-template-columns: 33% 33% 33%;
     }
 
     .sedan {
-        border-top-left-radius: 12px;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: 12px;
-
+        border-bottom-left-radius: 12px;
+        border-top-right-radius: 0;
     }
 
     .luxury {
-        border-top-right-radius: 0;
-        border-bottom-left-radius: 12px;
+        border-top-right-radius: 12px;
+        border-bottom-left-radius: 0;
         border-bottom-right-radius: 12px;
+    }
+
+    .show {
+        margin-bottom: 60px;
     }
 }
 
-@media screen and (max-width: 550px) {
-    .card {
-        width: 80vw;
-    }
 
-    .car {
-        padding: 40px;
+@media screen and (width> 970px) {
+    .card {
+        width: 934px;
     }
 }

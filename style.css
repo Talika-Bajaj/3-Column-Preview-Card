@@ -14,7 +14,6 @@
     --Very_dark_cyan: hsl(179, 100%, 13%);
 
     /* Neutral */
-
     --Transparent_white_para: hsla(0, 0%, 100%, 0.75);
     --Very_light_gray_buttons: hsl(0, 0%, 95%);
 }
@@ -27,18 +26,23 @@ body {
     background-color: var(--Very_light_gray_buttons);
 }
 
+main {
+    margin: 40px auto;
+}
+
 .card {
-    width: 934px;
+    width: 315px;
+    /* width: 84vw; */
     border-radius: 12px;
 }
 
 .info {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 100%;
 }
 
 .car {
-    padding: 50px;
+    padding: 40px;
     display: grid;
     gap: 30px;
 }
@@ -46,8 +50,7 @@ body {
 .sedan {
     background-color: var(--Bright_orange);
     border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-
+    border-top-right-radius: 12px;
 }
 
 .suv {
@@ -56,12 +59,13 @@ body {
 
 .luxury {
     background-color: var(--Very_dark_cyan);
-    border-top-right-radius: 12px;
+    border-top-right-radius: 0px;
     border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
 }
 
-.show {
-    margin-bottom: 60px;
+#car-icon {
+    height: 50px;
 }
 
 .show h1 {
